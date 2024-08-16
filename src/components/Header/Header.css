@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: var(--color-light);
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+.logo {
+  flex: 1;
+  z-index: 5;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background: url("../../assets/icons/icon-menu.svg") no-repeat;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-light);
+  overflow: hidden;
+  transform: translatex(-150%);
+  transition: transform 1s ease-in-out;
+}
+
+nav a {
+  color: var(--color-primary);
+  padding: .5rem 1rem;
+}
+
+nav.open {
+  transform: translatex(0);
+}
+
+nav.open a {
+  transition: background 0.3s ease-in;
+}
+
+nav.open a:hover {
+  background-color: var(--color-gray-hover);
+}
+
+@media(min-width: 768px) {
+  .icon {
+    display: none;
+  }
+  
+  nav {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    transform: none;
+    background-color: transparent;
+    gap: 1rem;
+  }
+  
+  nav a {
+    padding: 0;
+  }
+  nav a:hover {
+    color: rgb(0, 56, 209);
+  }
+}

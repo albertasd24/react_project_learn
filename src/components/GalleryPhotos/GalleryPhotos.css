@@ -1,0 +1,25 @@
+.galleryphotos {
+    display: grid;
+    width: 100%;
+    gap: 10px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.box__gallery {
+    background-color: rgb(156, 190, 255);
+    position: relative;
+    overflow: hidden;
+}
+
+.text__image {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: rgba(0, 119, 255, 0.733);
+    text-shadow: 0 0 3px #414141d3;
+    color: white;
+    padding: 2px 5px;
+    font-size: 1.4rem;
+    text-align: center;
+}
