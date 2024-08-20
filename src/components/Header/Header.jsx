@@ -21,9 +21,10 @@ const Header = () => {
         <LinkAncl to="#home">Home</LinkAncl>
         <LinkAncl to="#services">Servicios</LinkAncl>
         <LinkAncl to="#about">Sobre Nosotros</LinkAncl>
-        <Link to={"/"}>Nuestros especialistas</Link>
-        <Link to={"/"}>Contactanos</Link>
-        <Link to={"/"}>Preguntas Frecuentes</Link>
+        {/* <LinkAncl to="#specialist">Nuestros especialistas</LinkAncl> */}
+        <LinkAncl to="#testimony">Testimonios</LinkAncl>
+        <LinkAncl to="#contacts">Contactanos</LinkAncl>
+        <LinkAncl to="#questions">Preguntas Frecuentes</LinkAncl>
       </nav>
     </div>
   );

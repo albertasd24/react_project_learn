@@ -1,0 +1,67 @@
+.frecuentlaskedquestions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.container__questions {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.question {}
+
+.question__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid rgba(33, 159, 243, 0.267);
+    transition: background-color .5s ease-in-out;
+}
+
+.question__header:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+
+}
+
+.question__header h3 {
+    width: 90%;
+    font-weight: 500;
+}
+
+.question__header span {
+    width: 5%;
+    height: 24px;
+    background-color: #d3d3d3; /* El color que quieres aplicar a la máscara */
+    mask: url("../../assets/icons/icon-chevron-down-solid.svg") no-repeat center / contain;
+    transition: background-color .5s ease-in-out;
+}
+
+.question__header span:hover {
+    background-color: #0077ff;
+}
+
+.question__header span.button-focus{
+    background-color: #0077ff;
+    border: 1px solid red;
+}
+
+.question__body--none {
+    display: none;
+}
+
+.question__body {
+    height: 150px;
+    max-height: 150px;
+    padding: .5rem 1rem;
+    background: rgb(212, 223, 255);
+    text-align: justify;
+    overflow-y: auto;
+    overflow-x: none;
+    transition: background 2s ease-in-out;
+}
