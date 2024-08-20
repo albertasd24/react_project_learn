@@ -29,7 +29,7 @@ const FrecuentlAskedQuestions = ({ }) => {
 		setSelectedQuestionOpen(selectedQuestionOpenValue)
 	}
 	return (
-		<div className='frecuentlaskedquestions' id='questions'>
+		<div className='section frecuentlaskedquestions' id='questions'>
 			<h2 className='tittle__light'>Preguntas y Respuestas <span className='mark'>Frecuentes</span></h2>
 			<div className="container__questions">
 				{questionsWithResponse.map((question, i) => (

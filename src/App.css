@@ -3,7 +3,7 @@ main {
 }
 
 .section {
-    padding: .5rem 1rem;
+    padding: 2.8rem 2rem;
 }
 
 .banner {
@@ -71,7 +71,9 @@ main {
 
 .section__contact {
     background-color: var(--color-primary);
-    padding: 1.9rem 1.5rem;
+}
+.section__contact h2 {
+    color: #fff;
 }
 
 
