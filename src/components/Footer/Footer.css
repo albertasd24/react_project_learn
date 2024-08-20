@@ -1,7 +1,10 @@
 .footer {
-  padding: 2rem 1rem;
-  background-color: #bdd2ff;
+  padding: 2.8rem 2rem;
+  background-color: #2e90ffee;
   width: 100%;
+}
+.footer a {
+  color: #fff;
 }
 
 .footer__informative {

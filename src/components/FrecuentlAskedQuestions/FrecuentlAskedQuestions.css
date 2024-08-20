@@ -1,6 +1,7 @@
 .frecuentlaskedquestions {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #fff;
 }
 
 .container__questions {
@@ -8,6 +9,7 @@
     flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
+    border: 1px solid #ccc;
 }
 
 .question {}
@@ -19,7 +21,7 @@
     background-color: #fff;
     padding: .5rem 1rem;
     border-bottom: 1px solid rgba(33, 159, 243, 0.267);
-    transition: background-color .5s ease-in-out;
+    transition: background-color .2s ease-in-out;
 }
 
 .question__header:hover {

@@ -6,7 +6,7 @@ const Footer = () => {
 		<footer className='footer'>
 			<div className="footer__informative">
 				<div className="">
-					<h1>Brand<span className='mark'>ing</span></h1>
+					<h1>Brand<span className='mark--white'>ing</span></h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae beatae non omnis nihil ratione dolorum explicabo. </p>
 				</div>
 				<div className="">

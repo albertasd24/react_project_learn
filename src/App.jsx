@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import GalleryPhotos from './components/GalleryPhotos/GalleryPhotos'
 import iconStar from './assets/icons/icon-star.svg'
 import iconStarHalf from './assets/icons/icon-star-half.svg'
+import iconStarOutline from './assets/icons/icon-star-outline.svg'
 import { sendMessage } from './services/sendMessageWhatsApp'
 import { useState } from 'react'
 import FrecuentlAskedQuestions from './components/FrecuentlAskedQuestions/FrecuentlAskedQuestions'
@@ -32,7 +33,7 @@ function App() {
             <p className='banner__description'>Confía en nuestros expertos para brindarte el mejor cuidado dental y lograr una sonrisa deslumbrante. Aprovecha nuestras ofertas y experimenta la diferencia en tu salud buca</p>
           </div>
         </div>
-        <section className='section' id='services'>
+        <section className='section section__services' id='services'>
           <h2 className='tittle__light'>Nuestros <span className='mark'>Servicios</span> para ti</h2>
           <div className="section__gallery">
             <GalleryPhotoGigant />
@@ -66,10 +67,7 @@ function App() {
             </div>
           </article>
         </section>
-        <section className='section'>
-          <h2 className='tittle__light'>NUESTROS ESPECIALISTAS</h2>
-        </section>
-        <section className='section' id='testimony'>
+        <section className='section section__testimonies' id='testimony'>
           <h2 className='tittle__light'>Testimonios</h2>
           <div className="container__testimony">
             <div className="testimony">
@@ -97,8 +95,8 @@ function App() {
                     <img src={iconStar} alt="" />
                     <img src={iconStar} alt="" />
                     <img src={iconStar} alt="" />
-                    <img src={iconStar} alt="" />
-                    <img src={iconStar} alt="" />
+                    <img src={iconStarOutline} alt="" />
+                    <img src={iconStarOutline} alt="" />
                   </div>
                 </div>
               </div>
